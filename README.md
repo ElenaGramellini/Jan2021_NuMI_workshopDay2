@@ -5,6 +5,18 @@ This is a brief description of the prerequisits for each section
 
 
 #Systematics
+For the systematics hands on tutorial we will use the NuMI_Workshop.C macro.
+See slides in docdb:XXXX for details on what to change. 
+
+Make sure you copy the file:
+`/uboone/data/users/kmistry/work/MCC9/NuMI_Workshop_Jan2020/crosssec_run1.root`
+to your local directory.
+
+After you make your edits, to run the script you can do:
+
+`root -l -b -q NuMI_Workshop.C`
+
+this will make a folder called plots with all your saved histograms.
 
 #EffAndSmearing
 
