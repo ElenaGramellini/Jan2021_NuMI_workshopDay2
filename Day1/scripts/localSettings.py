@@ -1,0 +1,6 @@
+main_path = "/Users/elenag/Desktop/NuMITut/Day1/"
+ntuple_path = main_path+"/root_files/"
+pickle_path = main_path+"/pickles/"
+plots_path  = main_path+"/plots/"
+fold = "nuselection"
+APPEND = ""
