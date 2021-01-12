@@ -41,7 +41,7 @@ def plot_det_res(det_res, mu, sigma):
     plt.xticks(fontsize=14)
     plt.yticks(fontsize=14)
     plt.xlabel('(true - reco) / true', fontsize=14)
-    plt.ylabel('counts')
+    plt.ylabel('counts', fontsize=14)
 
     plt.plot(x, p*area, 'k', linewidth=2, color='red')
 
@@ -62,6 +62,7 @@ def plot_signal_and_eff(selected, df, signal, bins):
     
     sel = ax1.hist(selected.query(signal)['elec_e'], bins, color='orange')
     ax1.set_ylabel('selected signal events', fontsize=15)
+    ax1.set_xlabel('true electron energy [GeV]', fontsize=15)
 
     # compute efficiency 
     eff = [ a/b for a, b in zip(sel[0], gen[0]) ]
@@ -80,8 +81,6 @@ def plot_signal_and_eff(selected, df, signal, bins):
     ax2.errorbar(bc, eff, xerr=x_err, yerr=eff_err, fmt='o', color='seagreen', ecolor='seagreen', markersize=3) 
     ax2.set_ylim(0, 0.5)
     ax2.set_ylabel('Efficiency', fontsize=15)
-
-    plt.xlabel('true electron energy [GeV]', fontsize=15)
 
     plt.show()
 # --------------------------------------------------------------------------- #  
