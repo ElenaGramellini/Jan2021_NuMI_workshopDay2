@@ -19,5 +19,8 @@ After you make your edits, to run the script you can do:
 this will make a folder called plots with all your saved histograms.
 
 #EffAndSmearing
+For the efficiency & smearing matrix tutorial we will use the `effAndSmearing.ipynb` jupyter notebook in conjunction with the `smear_plotter.py` plotting script. 
+
+Run through the checklist on the last two slides in DocDB 33688 to properly set up the jupyter notebook before the tutorial. 
 
 #ReferenceFrame
